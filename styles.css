@@ -1,50 +1,82 @@
-/* Estilos generales */
+header {
+    background-color: #FFCFCF; /* Establecemos el color de fondo */
+    padding: 20px; /* Añadimos un poco de espacio interno */
+    text-align: center; /* Centramos el texto */
+    color: white; /* Cambiamos el color del texto para que sea legible */
+}
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradiente de blanco a gris claro */
 }
-h1, h2 {
-    color: #333;
+.imagen-arriba-izquierda {
+    position: absolute; /* Posicionamos la imagen de forma absoluta */
+    top: 20px; /* Distancia desde la parte superior */
+    left: 20px; /* Distancia desde el lado izquierdo */
+    width: 100px; /* Anchura deseada del logo */
+    height: auto; /* Altura automática para mantener la proporción */
 }
-ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+nav ul {
+    list-style-type: none; /* Quitamos los estilos de la lista */
+    margin: 0; /* Quitamos el margen por defecto */
+    padding: 0; /* Quitamos el relleno por defecto */
 }
-
-ul li {
-    margin-bottom: 10px;
-}
-
-/* Estilos específicos para secciones */
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    font-size: 1.5em;
-    color: #007bff; /* Azul */
+.contenedor {
+    display: flex; /* Usamos flexbox */
+    flex-wrap: wrap; /* Permitimos que las fotos se envuelvan en filas */
+    justify-content: center; /* Centramos las fotos horizontalmente */
+    gap: 10px; /* Espacio entre las fotos */
+    max-width: 1200px; /* Máximo ancho del contenedor */
+    margin: 0 auto; /* Centramos el contenedor en la página */
 }
 
-section ul {
-    margin-left: 20px;
+.descripcion-servicios {
+    text-align: center; /* Centramos el texto */
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #000000; /* Color de texto */
+    margin-top: 20px; /* Espacio superior */
 }
 
-section ul li {
-    margin-bottom: 5px;
+.descripcion-servicios img {
+    float: center; /* Alinear la imagen a la izquierda */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+
+}
+.titulodescripcion-servicios{
+    text-align: center; /* Centramos el texto */
+    font-size: 25px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
+    color: #000000; /* Color de texto */
+    margin-top: 20px; /* Espacio superior */
+}
+.foto {
+    width: calc(50% - 5px); /* Calculamos el ancho de cada foto */
+    overflow: hidden; /* Ocultamos cualquier parte de la imagen que se desborde */
+    border-radius: 10px; /* Añadimos bordes redondeados a las imágenes */
 }
 
-section ul li strong {
-    font-weight: bold;
+.foto img {
+    width: 100%; /* Hacemos que la imagen ocupe todo el ancho del contenedor */
+    transition: transform 0.3s ease; /* Agregamos una transición suave al pasar el mouse sobre la imagen */
 }
 
-/* Estilos para enlaces */
-a {
-    color: #007bff; /* Azul */
-    text-decoration: none;
+.foto:hover img {
+    transform: scale(1.1); /* Aumentamos ligeramente el tamaño de la imagen al pasar el mouse sobre ella */
+}
+nav ul li {
+    display: inline; /* Mostramos los elementos de la lista en línea */
+    margin-right: 20px; /* Añadimos un margen a la derecha entre los elementos */
 }
 
-a:hover {
-    text-decoration: underline;
+nav ul li a {
+    text-decoration: none; /* Quitamos la subrayado de los enlaces */
+    color: white; /* Color del texto */
+}
+footer {
+    background-color: #46CAF7; /* Establecemos el color de fondo */
+    padding: 20px; /* Añadimos un poco de espacio interno */
+    text-align: center; /* Centramos el texto */
+    color: white; /* Cambiamos el color del texto para que sea legible */
+    position: fixed; /* Fijamos el pie de página en la parte inferior de la ventana */
+    width: 100%; /* Hacemos que el ancho sea del 100% para que ocupe todo el ancho de la ventana */
+    bottom: 0; /* Lo situamos al fondo de la ventana */
 }
